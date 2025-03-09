@@ -5,13 +5,13 @@ A Secure, Automated Money Management System
 SpendGuard follows a microservices-based architecture, ensuring scalability, security, and modularity.
 
 Architecture Overview
-🔹 **Transaction Service** – Fetches transactions from GPay, BHIM, and Paytm
-🔹 **Categorization Service** – Classifies expenses (food, travel, etc.)
-🔹 **Analytics Service** – Provides insights and trends
-🔹 **Alert & Notification Service** – Sends budget alerts
-🔹 **Security & Encryption Service** – Encrypts and secures user data
-🔹 **User Service** – Manages authentication & accounts
-🔹 **Event Processing (Kafka)** – Handles real-time transaction updates
+- 🔹 **Transaction Service** – Fetches transactions from GPay, BHIM, and Paytm
+- 🔹 **Categorization Service** – Classifies expenses (food, travel, etc.)
+- 🔹 **Analytics Service** – Provides insights and trends
+- 🔹 **Alert & Notification Service** – Sends budget alerts
+- 🔹 **Security & Encryption Service** – Encrypts and secures user data
+- 🔹 **User Service** – Manages authentication & accounts
+- 🔹 **Event Processing (Kafka)** – Handles real-time transaction updates
 
 ## 2️⃣ Technology Stack
 | Component                 | Technology                                      |
@@ -201,17 +201,18 @@ Use K8s Pods & Services for microservice deployment.
 
 
 ## 6️⃣ Reference Materials & Learning Resources
-🔹 Microservices & Kafka
-Kafka Event Streaming
-Building Microservices with Node.js & NestJS
-🔹 API Development
-GraphQL Apollo Server
-FastAPI for REST APIs
-🔹 Security & Encryption
-AES-256 Encryption Guide
-OAuth 2.0 Authentication
-🔹 Deployment
-Docker & Kubernetes Guide
-AWS EKS for Scaling
+### 🔹 Microservices & Kafka
+    - [Link Text](https://Kafka Event Streaming)
+    - [Link Text](https://Building Microservices with Node.js & NestJS)
+### 🔹 API Development
+     - [Link Text](https://GraphQL Apollo Server)
+     - [Link Text](https://FastAPI for REST APIs)
+### 🔹 Security & Encryption
+      - [Link Text](https://AES-256 Encryption Guide)
+     - [Link Text](https://OAuth 2.0 Authentication)
+### 🔹 Deployment
+     - [Link Text](https://Docker & Kubernetes Guide)
+     - [Link Text](https://AWS EKS for Scaling)
+
 
 
