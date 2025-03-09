@@ -202,17 +202,17 @@ Use K8s Pods & Services for microservice deployment.
 
 ## 6️⃣ Reference Materials & Learning Resources
 ### 🔹 Microservices & Kafka
-    - [Link Text](https://Kafka Event Streaming)
-    - [Link Text](https://Building Microservices with Node.js & NestJS)
+- [Link Text](https://Kafka Event Streaming)
+- [Link Text](https://Building Microservices with Node.js & NestJS)
 ### 🔹 API Development
-     - [Link Text](https://GraphQL Apollo Server)
-     - [Link Text](https://FastAPI for REST APIs)
+- [Link Text](https://GraphQL Apollo Server)
+- [Link Text](https://FastAPI for REST APIs)
 ### 🔹 Security & Encryption
-      - [Link Text](https://AES-256 Encryption Guide)
-     - [Link Text](https://OAuth 2.0 Authentication)
+ - [Link Text](https://AES-256 Encryption Guide)
+- [Link Text](https://OAuth 2.0 Authentication)
 ### 🔹 Deployment
-     - [Link Text](https://Docker & Kubernetes Guide)
-     - [Link Text](https://AWS EKS for Scaling)
+- [Link Text](https://Docker & Kubernetes Guide)
+- [Link Text](https://AWS EKS for Scaling)
 
 
 
