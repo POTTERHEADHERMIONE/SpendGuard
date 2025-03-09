@@ -1,0 +1,84 @@
+SpendGaurd/
+│── backend/                # Backend services (Microservices)
+│   ├── auth-service/       # Authentication service (User login, JWT)
+│   │   ├── src/
+│   │   │   ├── controllers/
+│   │   │   ├── models/
+│   │   │   ├── routes/
+│   │   │   ├── services/
+│   │   │   ├── utils/
+│   │   ├── .env
+│   │   ├── Dockerfile
+│   │   ├── package.json
+│   │   ├── server.js
+│   ├── transaction-service/   # Handles transaction tracking
+│   │   ├── src/
+│   │   │   ├── controllers/
+│   │   │   ├── models/
+│   │   │   ├── routes/
+│   │   │   ├── services/
+│   │   │   ├── kafka/
+│   │   ├── .env
+│   │   ├── Dockerfile
+│   │   ├── package.json
+│   │   ├── server.js
+│   ├── expense-categorization-service/  # Auto-categorizes expenses
+│   │   ├── src/
+│   │   │   ├── ai_model/
+│   │   │   ├── controllers/
+│   │   │   ├── services/
+│   │   │   ├── kafka/
+│   │   ├── Dockerfile
+│   │   ├── package.json
+│   │   ├── server.js
+│   ├── notification-service/   # Sends alerts and reminders
+│   │   ├── src/
+│   │   │   ├── controllers/
+│   │   │   ├── kafka/
+│   │   ├── Dockerfile
+│   │   ├── package.json
+│   │   ├── server.js
+│   ├── subscription-service/   # Handles monthly subscriptions
+│   ├── bill-management-service/  # Manages monthly bills
+│   ├── kafka/                  # Kafka setup
+│   │   ├── kafka-docker-compose.yml
+│   │   ├── topics-config.json
+│── frontend/                   # Frontend (React + GraphQL)
+│   ├── public/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── context/
+│   │   ├── graphql/
+│   │   ├── services/
+│   │   ├── utils/
+│   │   ├── App.js
+│   │   ├── index.js
+│   ├── .env
+│   ├── Dockerfile
+│   ├── package.json
+│── database/                   # Database configurations
+│   ├── mongo/
+│   │   ├── init-db.js
+│   │   ├── docker-compose.yml
+│   ├── redis/
+│   ├── postgres/
+│── mobile-app/                 # Mobile App (Flutter)
+│   ├── lib/
+│   │   ├── screens/
+│   │   ├── components/
+│   │   ├── services/
+│   │   ├── main.dart
+│   ├── android/
+│   ├── ios/
+│   ├── pubspec.yaml
+│── docs/                       # Documentation and API docs
+│── deployment/                 # CI/CD and Kubernetes Deployment
+│   ├── docker-compose.yml
+│   ├── k8s/
+│   ├── ci-cd/
+│── .gitignore
+│── README.md
+│── docker-compose.yml
+│── package.json
+
