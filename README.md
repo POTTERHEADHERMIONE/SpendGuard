@@ -1,7 +1,7 @@
 # SpendGaurd
 A Secure, Automated Money Management System
 
-1️⃣ Define System Architecture
+## 1️⃣ Define System Architecture
 SpendGuard follows a microservices-based architecture, ensuring scalability, security, and modularity.
 
 Architecture Overview
@@ -13,7 +13,7 @@ Architecture Overview
 🔹 **User Service** – Manages authentication & accounts
 🔹 **Event Processing (Kafka)** – Handles real-time transaction updates
 
-2️⃣ Technology Stack
+## 2️⃣ Technology Stack
 | Component                 | Technology                                      |
 |---------------------------|------------------------------------------------|
 | **Backend (Microservices)** | Node.js (NestJS) / Python (FastAPI, Django)   |
@@ -25,7 +25,7 @@ Architecture Overview
 | **Deployment**            | Docker + Kubernetes (K8s)                     |
 
 
-3️⃣ System Workflow
+## 3️⃣ System Workflow
 🔗 Step 1: **Transaction Data Collection**
 There are two possible methods to fetch transactions:
 
@@ -48,7 +48,7 @@ Example Logic:
 "Uber ₹300" → Transport
 "Amazon ₹1200" → Shopping
 
-1️⃣ Merchant Name-Based Categorization (Rule-Based Approach)
+### 1️⃣ Merchant Name-Based Categorization (Rule-Based Approach)
 Most payment apps like GPay, Paytm, and BHIM provide transaction details with a merchant name (e.g., Amazon, Swiggy, Uber).
 We can use a predefined mapping of merchant names to categories.
 Example Logic:
@@ -68,6 +68,7 @@ Use a lookup table or dictionary to assign a category.
 python
 Copy
 Edit
+```bash
 merchant_category_map = {
     "Swiggy": "Food & Dining",
     "Uber": "Transport",
@@ -75,13 +76,15 @@ merchant_category_map = {
     "Airtel": "Utilities",
     "Netflix": "Entertainment"
 }
-
+```
+```bash
 def categorize_transaction(merchant_name):
     return merchant_category_map.get(merchant_name, "Unknown")
-
+```
 # Example transaction
 print(categorize_transaction("Swiggy"))  # Output: Food & Dining
-2️⃣ NLP-Based Categorization (Using Transaction Description)
+
+### 2️⃣ NLP-Based Categorization (Using Transaction Description)
 If the transaction doesn't have a merchant name, we can analyze the transaction description.
 Apply Natural Language Processing (NLP) to extract useful information.
 Example Transaction Messages:
@@ -103,6 +106,7 @@ import spacy
 # Load NLP model
 nlp = spacy.load("en_core_web_sm")
 
+```bash
 def categorize_transaction_nlp(transaction_text):
     keywords = {
         "food": ["restaurant", "Swiggy", "Zomato", "dining"],
@@ -119,10 +123,11 @@ def categorize_transaction_nlp(transaction_text):
             return category.capitalize()
     
     return "Unknown"
-
+```
 # Example
 print(categorize_transaction_nlp("Paid ₹500 to Swiggy via GPay"))  # Output: Food
-3️⃣ Machine Learning-Based Categorization (Supervised Learning)
+
+### 3️⃣ Machine Learning-Based Categorization (Supervised Learning)
 Train an ML model using historical transaction data.
 Features:
 Transaction amount
@@ -135,7 +140,8 @@ Model predicts the category automatically.
 Collect past transactions & labeled categories.
 Use a Random Forest / LSTM model for classification.
 Deploy the model as a Microservice (FastAPI, Flask, TensorFlow Serving).
-4️⃣ AI-Based User Prompting (If All Else Fails)
+
+### 4️⃣ AI-Based User Prompting (If All Else Fails)
 If the system cannot categorize a transaction, we ask the user via:
 
 Push Notification 📩 – "We couldn’t categorize this ₹700 transaction. Can you help us?"
@@ -144,13 +150,7 @@ Auto-Learning 📈 – If the user categorizes once, we remember it for future t
 
 
 
-
-
-
-
-
-
-📊 Step 3: **Analytics & Insights**
+### 📊 Step 3: **Analytics & Insights**
 The Analytics Service stores transaction history in a database.
 
 Users can view: 
@@ -160,7 +160,7 @@ Users can view:
 
 GraphQL API is used for fetching only the required insights efficiently.
 
-🚨 Step 4: **Alerts & Notifications**
+#### 🚨 Step 4: **Alerts & Notifications**
 The Alert Service monitors user spending.
 Triggers Notifications when:
 A budget limit is exceeded (e.g., Food spending > ₹5000/month)
@@ -168,7 +168,7 @@ An unusual transaction occurs (e.g., Sudden large expense)
 Example Notification:
 📩 "You’ve spent ₹6000 on shopping this month! Consider reviewing your budget."
 
-🔐 Step 5: **Security & Privacy**
+#### 🔐 Step 5: **Security & Privacy**
 Since this system handles sensitive financial data, security is a top priority:
 
 AES-256 Encryption – Encrypt transaction data before storing it.
@@ -176,7 +176,7 @@ OAuth 2.0 Authentication – Secure API access using Google/Facebook login.
 Role-based Access Control (RBAC) – Prevents unauthorized data access.
 Zero-Knowledge Encryption – Even the database admins can't see user data.
 
-4️⃣ Development Guide
+## 4️⃣ Development Guide
 🛠 Step 1: **Setting Up Microservices**
 ✅ Create a NestJS (Node.js) or FastAPI (Python) backend.
 ✅ Set up Docker & Kubernetes for microservices.
@@ -192,7 +192,7 @@ Zero-Knowledge Encryption – Even the database admins can't see user data.
 📌 Step 4: **Implementing GraphQL API**
 GraphQL query for fetching expenses:
 
-5️⃣ Deployment & Scaling
+## 5️⃣ Deployment & Scaling
 1.Containerization with Docker
 Each microservice runs in a Docker container.
 
@@ -200,7 +200,7 @@ Each microservice runs in a Docker container.
 Use K8s Pods & Services for microservice deployment.
 
 
-6️⃣ Reference Materials & Learning Resources
+## 6️⃣ Reference Materials & Learning Resources
 🔹 Microservices & Kafka
 Kafka Event Streaming
 Building Microservices with Node.js & NestJS
