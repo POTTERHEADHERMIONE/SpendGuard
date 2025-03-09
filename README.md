@@ -214,5 +214,10 @@ Use K8s Pods & Services for microservice deployment.
 - [Link Text](https://Docker & Kubernetes Guide)
 - [Link Text](https://AWS EKS for Scaling)
 
+## All the features in the dashboard
+- Dashboard: Status and activities (Daily, Monthly, Yearly)
+- Add the expenses that are paid via cash
+- Monthly subscriptions
+- Monthly bills
 
 
