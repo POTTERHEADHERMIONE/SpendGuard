@@ -1,0 +1,24 @@
+:root {
+  --main-bg-color: #fff;
+  --main-text-color: #3c3c3c;
+  --light-text-color: #fff;
+  --main-disabled-color: gray;
+  --main-error-color: #d90d0d;
+  --modal-bg-color: rgba(0, 0, 0, 0.85);
+  --main-purple-bg-color: #677699;
+  --form-btn-text-color: #fff;
+  --explainer-text-color: gray;
+  --negative-no-color: #d90d0d;
+  --positive-no-color: #007d00;
+  --info-text-color: #777;
+  --goal-text-color: #1a86bb;
+  --main-border-color: gray;
+  --light-border-color: lightgray;
+  --dark-border-color: #000;
+  --start-date-color: #595959;
+  --dash-button-color: #909aa6;
+  --button-border-color: #4a5057;
+  --tool-tip-bg-color: #59396a;
+  --tool-tip-text-color: #fff;
+  --delete-expense-bg-color: #ea7070;
+}

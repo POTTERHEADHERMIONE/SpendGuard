@@ -1,0 +1,101 @@
+.budgets-menu {
+  width: 100%;
+  min-height: 500px;
+  padding: 30px;
+  font-size: 1.25em;
+}
+
+.budgets-menu ul {
+  margin-bottom: 60px;
+}
+
+.budgets-menu li {
+  margin-bottom: 15px;
+  border-bottom: 1px solid var(--light-border-color);
+  padding-bottom: 10px;
+  margin-top: -170px;
+  opacity: 0;
+  transition: opacity ease-in 1.5s 0.75s, margin ease-in 1.2s;
+}
+
+li.show-budget-menu-item {
+  opacity: 1;
+  margin-top: 0;
+}
+
+.budget-menu-item {
+  width: 100%;
+}
+
+.budget-menu-item .start-date {
+  text-align: right;
+  font-size: 0.75em;
+  font-weight: 300;
+}
+
+.budget-menu-item-details {
+  cursor: pointer;
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.budget-menu-item-details .budget-name {
+  margin-left: 5px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.budget-menu-item-details .budget-tracking {
+  float: right;
+}
+
+.budget-total {
+  text-align: right;
+  font-weight: 500;
+}
+
+.label {
+  margin-right: 10px;
+}
+
+.budget-settings {
+  width: 100%;
+  margin: auto;
+  font-size: 1em;
+}
+
+.budget-settings div {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.budget-settings input[type="text"],
+.budget-settings input[type="date"] {
+  text-align: center;
+  width: 8em;
+}
+
+.start-date {
+  color: var(--start-date-color);
+}
+
+.archive-btn,
+.delete-btn {
+  display: block;
+  margin: 30px 0;
+  padding: 15px 0 0 0;
+  border-bottom: 1px dotted var(--dark-border-color);
+  font-size: 0.8em;
+}
+
+@media all and (min-width: 450px) {
+  .budget-settings {
+    width: 85%;
+    margin: auto;
+    font-size: 1em;
+  }
+}

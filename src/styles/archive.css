@@ -1,0 +1,36 @@
+.archive {
+  width: 85%;
+  margin: auto;
+  font-size: 1.25em;
+  padding-bottom: 30px;
+}
+
+.archive ul li {
+  position: relative;
+  text-align: center;
+  border-bottom: 1px solid var(--main-border-color);
+  padding: 15px 0;
+  margin-top: 45px;
+}
+
+.archive ul li:last-of-type {
+  border: none;
+}
+
+.archive ul li p:last-of-type {
+  margin-bottom: 15px;
+}
+
+.archive-results {
+  margin-top: 30px;
+  font-weight: 500;
+}
+
+.archive-results p {
+  display: flex;
+  justify-content: space-between;
+}
+
+.archive .delete-btn {
+  margin-top: 0;
+}

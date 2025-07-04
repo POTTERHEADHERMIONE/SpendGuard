@@ -1,0 +1,477 @@
+{
+  "settings": [
+    {
+      "id": 1,
+      "default-currency": "$",
+      "max-length": 250,
+      "categories": [
+        "Groceries",
+        "Electronics",
+        "Clothes",
+        "Entertainment",
+        "",
+        "s",
+        "Stuff",
+        "New Stuff",
+        "Food",
+        "Old one",
+        "New One",
+        "Toys",
+        "bananas",
+        "return plant",
+        "hi",
+        "stuff",
+        "Test"
+      ],
+      "quick-add": false,
+      "dark-mode": true
+    }
+  ],
+  "archives": [
+    {
+      "name": "First Archived",
+      "currency": "$",
+      "frequency": "month",
+      "limit": 300,
+      "startDate": "2020/06/06",
+      "endDate": "2020/08/30",
+      "totalSpent": 1290.56,
+      "totalTracking": 50.89,
+      "id": 1
+    },
+    {
+      "name": "Second Archived",
+      "currency": "$",
+      "frequency": "month",
+      "limit": 300,
+      "startDate": "2020/06/06",
+      "endDate": "2020/08/30",
+      "totalSpent": 19990.56,
+      "totalTracking": -765450.89,
+      "id": 2
+    },
+    {
+      "name": "Third Archived",
+      "currency": "$",
+      "frequency": "month",
+      "limit": 1000,
+      "startDate": "2020/06/06",
+      "endDate": "2020/08/30",
+      "totalSpent": 879990.56,
+      "totalTracking": 50.89,
+      "id": 3
+    }
+  ],
+  "budgets": [
+    {
+      "name": "Testing",
+      "currency": "$",
+      "frequency": "month",
+      "limit": 300,
+      "startDate": "2020/06/05",
+      "truncated": 0,
+      "currentPeriod": 7,
+      "id": 1
+    },
+    {
+      "name": "old expends",
+      "currency": "$",
+      "frequency": "week",
+      "limit": 100,
+      "startDate": "2020/07/07",
+      "truncated": 0,
+      "currentPeriod": 26,
+      "id": 7
+    },
+    {
+      "name": "Agains",
+      "currency": "$",
+      "frequency": "week",
+      "limit": 300,
+      "startDate": "2020/06/05",
+      "truncated": 0,
+      "currentPeriod": 30,
+      "id": 2
+    },
+    {
+      "name": "delete expends",
+      "currency": "$",
+      "frequency": "week",
+      "limit": 200,
+      "startDate": "2020/07/07",
+      "truncated": 0,
+      "currentPeriod": 26,
+      "id": 8
+    },
+    {
+      "name": "new testy face",
+      "currency": "$",
+      "frequency": "week",
+      "limit": 120,
+      "startDate": "2020/08/06",
+      "truncated": 0,
+      "currentPeriod": 22,
+      "id": 9
+    },
+    {
+      "name": "rt",
+      "currency": "$",
+      "frequency": "week",
+      "limit": 56,
+      "startDate": "2020/06/25",
+      "truncated": 0,
+      "currentPeriod": 28,
+      "id": 3
+    },
+    {
+      "name": "pounds",
+      "currency": "£",
+      "frequency": "month",
+      "limit": 400,
+      "startDate": "2020/07/07",
+      "truncated": 0,
+      "currentPeriod": 6,
+      "id": 4
+    },
+    {
+      "name": "whatever",
+      "currency": "¢",
+      "frequency": "week",
+      "limit": 20,
+      "startDate": "2020/07/07",
+      "truncated": 0,
+      "currentPeriod": 26,
+      "id": 6
+    },
+    {
+      "name": "pounds again",
+      "currency": "£",
+      "frequency": "week",
+      "limit": 200,
+      "startDate": "2020/07/07",
+      "truncated": 0,
+      "currentPeriod": 26,
+      "id": 5
+    },
+    {
+      "name": "blah",
+      "currency": "$",
+      "frequency": "week",
+      "limit": 500,
+      "startDate": "2020/09/07",
+      "truncated": 0,
+      "currentPeriod": 17,
+      "id": 10
+    },
+    {
+      "name": "started",
+      "currency": "$",
+      "frequency": "week",
+      "limit": 50,
+      "startDate": "2020/09/30",
+      "truncated": 0,
+      "currentPeriod": 14,
+      "id": 11
+    },
+    {
+      "name": "newest",
+      "currency": "$",
+      "frequency": "week",
+      "limit": 100,
+      "startDate": "2020/09/27",
+      "truncated": 0,
+      "currentPeriod": 14,
+      "id": 12
+    }
+  ],
+  "expenditures": [
+    {
+      "id": 10,
+      "budgetId": 7,
+      "title": "Ham",
+      "amount": 40.5,
+      "date": "2020/7/29",
+      "period": 4
+    },
+    {
+      "id": 11,
+      "budgetId": 7,
+      "title": "Toast",
+      "amount": 21.76,
+      "date": "2020/7/30",
+      "period": 4
+    },
+    {
+      "id": 3,
+      "budgetId": 1,
+      "title": "",
+      "amount": 15.5,
+      "date": "2020/7/14",
+      "period": 2
+    },
+    {
+      "id": 12,
+      "budgetId": 7,
+      "title": "Spam",
+      "amount": 31.25,
+      "date": "2020/7/31",
+      "period": 4
+    },
+    {
+      "id": 13,
+      "budgetId": 8,
+      "title": "Spamoni",
+      "amount": 20,
+      "date": "2020/7/31",
+      "period": 4
+    },
+    {
+      "id": 2,
+      "budgetId": 2,
+      "title": "Pop Tarts",
+      "amount": 16.65,
+      "date": "2020/7/14",
+      "period": 6
+    },
+    {
+      "title": "test",
+      "amount": 5.6,
+      "budgetId": 3,
+      "date": "2020/7/9",
+      "period": 3,
+      "id": 14
+    },
+    {
+      "title": "test again",
+      "amount": 30.2,
+      "budgetId": 3,
+      "date": "2020/7/9",
+      "period": 3,
+      "id": 15
+    },
+    {
+      "title": "test",
+      "amount": 14.24,
+      "budgetId": 7,
+      "date": "2020/8/9",
+      "period": 5,
+      "id": 16
+    },
+    {
+      "title": "new one",
+      "amount": 10,
+      "budgetId": 7,
+      "date": "2020/8/9",
+      "period": 5,
+      "id": 17
+    },
+    {
+      "title": "terstberst",
+      "amount": 5,
+      "budgetId": 7,
+      "date": "2020/8/9",
+      "period": 5,
+      "id": 18
+    },
+    {
+      "id": 4,
+      "budgetId": 7,
+      "title": "Bread",
+      "amount": 15.5,
+      "date": "2020/7/7",
+      "period": 1
+    },
+    {
+      "title": "goAway0",
+      "amount": 60,
+      "budgetId": 6,
+      "date": "2020/7/15",
+      "period": 2,
+      "id": 20
+    },
+    {
+      "id": 5,
+      "budgetId": 7,
+      "title": "Tea",
+      "amount": 10.5,
+      "date": "2020/7/8",
+      "period": 1
+    },
+    {
+      "id": 6,
+      "budgetId": 7,
+      "title": "Croissants",
+      "amount": 15.5,
+      "date": "2020/7/10",
+      "period": 1
+    },
+    {
+      "id": 7,
+      "budgetId": 7,
+      "title": "Noodles",
+      "amount": 20.75,
+      "date": "2020/7/14",
+      "period": 2
+    },
+    {
+      "id": 8,
+      "budgetId": 7,
+      "title": "Milk",
+      "amount": 30,
+      "date": "2020/7/14",
+      "period": 2
+    },
+    {
+      "id": 9,
+      "budgetId": 7,
+      "title": "Mix tapes",
+      "amount": 100,
+      "date": "2020/7/22",
+      "period": 3
+    },
+    {
+      "title": "goAway1",
+      "amount": 60,
+      "budgetId": 6,
+      "date": "2020/7/15",
+      "period": 2,
+      "id": 21
+    },
+    {
+      "title": "goAway2",
+      "amount": 60,
+      "budgetId": 6,
+      "date": "2020/7/15",
+      "period": 2,
+      "id": 22
+    },
+    {
+      "title": "stay",
+      "amount": 60,
+      "budgetId": 6,
+      "date": "2020/7/15",
+      "period": 2,
+      "id": 23
+    },
+    {
+      "title": "old one",
+      "amount": 5,
+      "budgetId": 9,
+      "date": "2020/8/8",
+      "period": 1,
+      "id": 24
+    },
+    {
+      "title": "old one too",
+      "amount": 5,
+      "budgetId": 9,
+      "date": "2020/8/8",
+      "period": 1,
+      "id": 25
+    },
+    {
+      "title": "test",
+      "amount": 4.4,
+      "date": "2020/08/26",
+      "budgetId": 9,
+      "period": 3,
+      "id": 26
+    },
+    {
+      "title": "hi there",
+      "amount": 34.52,
+      "date": "2020/08/25",
+      "budgetId": 9,
+      "period": 3,
+      "id": 27
+    },
+    {
+      "title": "bunnies",
+      "amount": 100,
+      "date": "2020/09/08",
+      "budgetId": 10,
+      "period": 1,
+      "id": 28
+    },
+    {
+      "title": "cats",
+      "amount": 200,
+      "date": "2020/09/08",
+      "budgetId": 10,
+      "period": 1,
+      "id": 29
+    },
+    {
+      "title": "",
+      "amount": 50,
+      "date": "2020/09/10",
+      "budgetId": 1,
+      "period": 4,
+      "id": 30
+    },
+    {
+      "title": "",
+      "amount": 50,
+      "date": "2020/09/16",
+      "budgetId": 10,
+      "period": 2,
+      "id": 31
+    },
+    {
+      "title": "",
+      "amount": 600,
+      "date": "2020/09/16",
+      "budgetId": 10,
+      "period": 2,
+      "id": 32
+    },
+    {
+      "title": "this is a rather long name i think",
+      "amount": 20.54,
+      "date": "2020/09/18",
+      "budgetId": 7,
+      "period": 11,
+      "id": 33
+    },
+    {
+      "title": "find me",
+      "amount": 5,
+      "date": "2020/06/30",
+      "budgetId": 1,
+      "period": 1,
+      "id": 34
+    },
+    {
+      "title": "Find Me Now",
+      "amount": 1,
+      "date": "2020/06/16",
+      "budgetId": 1,
+      "period": 1,
+      "id": 36
+    },
+    {
+      "title": "",
+      "amount": 10,
+      "date": "2020/09/20",
+      "budgetId": 1,
+      "period": 4,
+      "id": 37
+    },
+    {
+      "title": "Aug",
+      "amount": 30,
+      "date": "2020/08/12",
+      "budgetId": 1,
+      "period": 3,
+      "id": 38
+    },
+    {
+      "title": "",
+      "amount": 30,
+      "date": "2020/09/24",
+      "budgetId": 6,
+      "period": 12,
+      "id": 41
+    }
+  ]
+}

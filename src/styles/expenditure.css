@@ -1,0 +1,88 @@
+form.simple-expenditure-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid var(--main-border-color);
+  padding: 0 15px;
+  max-width: 750px;
+  min-width: 350px;
+  margin: auto;
+}
+
+.simple-expenditure-form input[type="text"] {
+  flex: 30;
+  font-size: 1.25em;
+  padding: 20px 10px;
+}
+
+.simple-expenditure-form input[type="submit"] {
+  min-width: 45px;
+  flex: 1;
+  font-size: 2.5em;
+  padding: 0 0 5px 0;
+  margin-top: -8px;
+  text-align: right;
+}
+
+.expenditure-form {
+  width: 95%;
+  margin: auto;
+  font-size: 1em;
+}
+
+.expenditure-form div {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 30px;
+}
+
+.expenditure-form input[type="text"],
+.expenditure-form input[type="date"] {
+  text-align: center;
+  width: 8.5em;
+}
+
+.expenses {
+  margin: 60px 0;
+}
+
+.expenses h3 {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  background-color: var(--main-purple-bg-color);
+  color: var(--light-text-color);
+  padding: 5px 0;
+  letter-spacing: 5px;
+}
+
+.old-expenses {
+  margin-top: 60px;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.fixed-bottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 0;
+  background-color: var(--main-bg-color);
+  z-index: 2;
+}
+
+@media all and (min-width: 450px) {
+  .expenditure-form {
+    width: 85%;
+  }
+}
+
+@media all and (min-width: 750px) {
+  .fixed-bottom {
+    padding: 0 30px;
+  }
+}

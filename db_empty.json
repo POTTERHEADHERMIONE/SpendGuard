@@ -1,0 +1,18 @@
+{
+  "settings": [{
+    "id": 1,
+    "default-currency": "",
+    "max-length": 250,
+    "categories": [
+      "Groceries",
+      "Electronics",
+      "Clothes",
+      "Entertainment"
+    ],
+    "quick-add": false,
+    "dark-mode": true
+  }],
+  "archives": [],
+  "budgets": [],
+  "expenditures": []
+}

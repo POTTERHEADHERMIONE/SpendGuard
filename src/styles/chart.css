@@ -1,0 +1,54 @@
+.modal.charts {
+  padding: 60px 15px;
+}
+
+.small-width {
+  width: 95px;
+}
+
+.VictoryContainer {
+  margin: -45px auto 45px auto;
+}
+
+.VictoryContainer svg g text tspan {
+  font-family: 'Manrope', sans-serif !important;
+}
+
+.VictoryContainer div svg text tspan {
+  font-family: 'Manrope', sans-serif !important;
+}
+
+.pie-chart {
+  width: 75%;
+  margin: auto;
+  margin-top: 60px;
+}
+
+.chart-container {
+  width: 100%;
+  margin: 0 auto;
+  overflow: visible;
+  padding: 0;
+  position: relative;
+}
+
+.charts .chart-container:last-of-type {
+  padding-bottom: 30px;
+}
+
+.charts-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 101;
+  background-color: transparent;
+}
+
+@media all and (min-width: 600px) {
+  .chart-container {
+    width: 95%;
+    padding: 20px;
+  }
+}

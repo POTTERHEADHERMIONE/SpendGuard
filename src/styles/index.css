@@ -1,0 +1,333 @@
+@font-face {
+  font-family: Heebo;
+  src: url(../fonts/Heebo/Heebo-VariableFont_wght.ttf);
+}
+
+.not-started {
+  color: var(--main-disabled-color);
+  cursor: auto;
+}
+
+.error {
+  color: var(--main-error-color);
+  padding: 10px 0;
+  text-align: center;
+  display: block !important;
+}
+
+.modal-background {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--modal-bg-color);
+  z-index: 100;
+}
+
+.modal {
+  min-width: 350px;
+  width: 95%;
+  max-width: 700px;
+  min-height: 450px;
+  height: 95%;
+  background-color: var(--main-bg-color);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 60px 15px;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+
+.modal::-webkit-scrollbar {
+  display: none;
+}
+
+.modal input[type="text"] {
+  border-bottom: 1px solid var(--main-border-color);
+}
+
+.modal div {
+  margin-bottom: 45px;
+}
+
+input[type="text"].currency {
+  width: 3.5em;
+  font-size: 1em;
+}
+
+input[type="text"].amount {
+  width: 5em;
+}
+
+.modal .buttons {
+  display: block;
+  margin-top: 30px;
+}
+
+.modal .buttons button,
+.modal .buttons input[type="submit"] {
+  display: block;
+  margin: 30px auto;
+  width: 85%;
+  background-color: var(--main-purple-bg-color);
+  color: var(--form-btn-text-color);
+  padding: 15px 0;
+  text-align: center;
+}
+
+.close {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: 0;
+  top: 15px;
+  font-size: 1.5em;
+  font-weight: bold;
+  z-index: 200;
+}
+
+.modal .name-input {
+  width: 50%;
+}
+
+.large-submit {
+  background-color: var(--main-purple-bg-color);
+  color: var(--form-btn-text-color);
+  width: 85%;
+  padding: 15px 0;
+  text-align: center;
+}
+
+.confirm {
+  text-align: left;
+  font-size: 0.8em;
+}
+
+.confirm span {
+  display: block;
+}
+
+.confirm input[type="submit"],
+.confirm button {
+  padding: 10px 15px 3px 10px;
+  margin: 0 30px;
+  border-bottom: 1px dotted var(--dark-border-color);
+}
+
+.back {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 30px;
+}
+
+.explainer {
+  color: var(--explainer-text-color);
+  font-size: 0.8em;
+  font-style: italic;
+  margin-top: -30px;
+  margin-bottom: 15px;
+}
+
+.negative-tracking {
+  color: var(--negative-no-color) !important;
+}
+
+.positive-tracking {
+  color: var(--positive-no-color) !important;
+}
+
+.currency {
+  font-size: 1.25em;
+}
+
+.banner {
+  border-bottom: 1px solid var(--main-border-color);
+  margin-bottom: 60px;
+}
+
+.banner h2 {
+  margin: 0;
+  font-size: 2em;
+  font-family: 'Heebo', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 120px;
+  right: 15px;
+  width: 40px;
+}
+
+.serious-error {
+  text-align: center;
+}
+
+.serious-error h2 {
+  background-color: var(--main-error-color);
+  color: var(--light-text-color);
+  text-transform: uppercase;
+}
+
+.serious-error .main-message {
+  color: var(--main-error-color);
+  font-weight: 600;
+}
+
+.serious-error p {
+  font-size: 1.25em;
+  padding: 15px 0;
+}
+
+.serious-error .label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.serious-error .large-submit {
+  margin: 30px auto;
+  font-size: 1.25em;
+}
+
+.on-off-btn {
+  border-bottom: 1px solid var(--main-border-color);
+  width: 6em;
+  text-align: center;
+  margin: 10px;
+}
+
+.hidden-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+}
+
+.tooltip {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 200px;
+  line-height: 1.35;
+  font-size: 0.9em;
+  z-index: 1000;
+}
+
+.tooltip>div {
+  position: relative;
+  width: 100%;
+  background-color: var(--tool-tip-bg-color);
+  padding: 15px;
+  color: var(--tool-tip-text-color);
+  border-radius: 10px;
+  margin-bottom: 20px;
+  bottom: -100px;
+  transition: bottom ease-out 0.5s;
+}
+
+div.move-tooltip {
+  bottom: 0;
+}
+
+.tooltip .triangle {
+  width: 0;
+  height: 0;
+  display: block;
+  position: absolute;
+  bottom: -15px;
+  left: 170px;
+  border-top: 20px solid var(--tool-tip-bg-color);
+  border-right: 18px solid transparent;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+  z-index: 100;
+  font-size: 2.5em;
+  text-align: center;
+  overflow: hidden;
+  opacity: 1;
+  transition: opacity ease-in-out 0.2s;
+}
+
+.loading h1 {
+  position: absolute;
+  top: 33%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.25em;
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: 1px;
+}
+
+.loading .message {
+  font-size: 1em;
+  position: absolute;
+  top: 33%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.loading .message p {
+  line-height: 1.25;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+.app {
+  background-color: #1d1828;
+  color: #fff;
+}
+
+@media all and (min-width: 450px) {
+  .scroll-to-top {
+    bottom: 90px;
+  }
+
+  .modal .buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+  }
+
+  .modal .buttons button,
+  .modal .buttons input[type="submit"] {
+    width: 125px;
+  }
+
+  .large-submit {
+    width: 50%;
+  }
+}
+
+@media all and (min-width: 570px) {
+  .modal {
+    padding: 60px;
+  }
+
+  .back {
+    top: 30px;
+    left: 30px;
+    width: 35px;
+  }
+}

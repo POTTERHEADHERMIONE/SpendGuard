@@ -1,0 +1,74 @@
+.settings {
+  width: 85%;
+  margin: auto;
+  font-size: 1.25em;
+}
+
+.settings div {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 30px;
+}
+
+.settings input[type="text"] {
+  text-align: center;
+  width: 6em;
+}
+
+.settings input[type="text"] {
+  border-bottom: 1px solid var(--main-border-color);
+  margin: 10px;
+}
+
+.settings .buttons {
+  display: block;
+}
+
+.buttons.import {
+  display: block;
+}
+
+.buttons.import button {
+  margin-bottom: 0;
+  display: block;
+  width: 85%;
+}
+
+.settings input[type="submit"] {
+  margin: 30px auto 0 auto;
+  display: block;
+}
+
+.import-export {
+  display: block;
+  margin: 30px 0;
+  padding: 15px 0 0 0;
+  border-bottom: 1px dotted var(--dark-border-color);
+  font-size: 0.8em;
+}
+
+.settings .modal {
+  display: block;
+  text-align: center;
+}
+
+.settings .modal p {
+  font-size: 1.25em;
+}
+
+@media all and (min-width: 450px) {
+  .settings input[type="submit"] {
+    margin: 90px auto 0 auto;
+  }
+}
+
+@media all and (min-width: 620px) {
+  .buttons.import {
+    display: flex;
+  }
+
+  .buttons.import button {
+    width: 215px;
+  }
+}

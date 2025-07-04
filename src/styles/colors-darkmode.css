@@ -1,0 +1,55 @@
+.dark-mode {
+  --main-bg-color: #1d1828;
+  --main-text-color: #ecf1f2;
+  --light-text-color: #f0eaf0;
+  --main-disabled-color: #8d86b9;
+  --main-error-color: #fb965a;
+  --modal-bg-color: rgba(0, 0, 0, 0.85);
+  --main-purple-bg-color: #351966;
+  --form-btn-text-color: #ecf1f2;
+  --explainer-text-color: #7e5db7;
+  --negative-no-color: #f47070;
+  --positive-no-color: #88ffd1;
+  --info-text-color: #ecf1f2;
+  --goal-text-color: #ffed4a;
+  --main-border-color: #583a8c;
+  --light-border-color: #7e5db7;
+  --dark-border-color: #ecf1f2;
+  --start-date-color: #ecf1f2;
+  --dash-button-color: #361f68;
+  --button-border-color: #7351ae;
+  --tool-tip-bg-color: #fff;
+  --tool-tip-text-color: #1d1828;
+  --delete-expense-bg-color: #e6743c;
+}
+
+.dark-mode select {
+  background-color: transparent;
+}
+
+.dark-mode select:focus {
+  background-color: var(--main-border-color);
+}
+
+.dark-mode .charts-btn img,
+.dark-mode .close img,
+.dark-mode .back img {
+  filter: grayscale(100%) brightness(35%) sepia(100%) hue-rotate(130deg) saturate(10000%) contrast(0.8);
+}
+
+.dark-mode .chart-container svg {
+  filter: invert(1) brightness(1.5);
+}
+
+.dark-mode .chart-container .pie-chart svg {
+  filter: invert(0.9) brightness(1.5);
+}
+
+.dark-mode .scroll-to-top img {
+  filter: grayscale(100%) brightness(1000%) sepia(1000%) saturate(1000%) hue-rotate(10deg);
+  opacity: 0.65;
+}
+
+.dark-mode ::-webkit-calendar-picker-indicator {
+  filter: invert(0.9);
+}
